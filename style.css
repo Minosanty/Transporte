@@ -1,0 +1,18 @@
+ :root{
+      --accent:#0d6efd; /* azul primario */
+      --accent-dark:#0747c9;
+      --bg:#f7fbff;
+      --card:#ffffff;
+      --muted:#6c757d;
+    }
+    body{background:linear-gradient(180deg,var(--bg),#ffffff);font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+    .hero{padding:4.5rem 0;background:linear-gradient(90deg, rgba(13,110,253,0.06), rgba(0,123,255,0.02));}
+    .brand-logo{height:64px;width:64px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;box-shadow:0 8px 24px rgba(13,110,253,0.12)}
+    .cta-btn{background:linear-gradient(90deg,var(--accent),var(--accent-dark));color:#fff;border:none}
+    .service-card{border-radius:16px;box-shadow:0 8px 30px rgba(16,24,40,0.06);transition:transform .24s ease, box-shadow .24s ease}
+    .service-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(16,24,40,0.08)}
+    .info-row .icon{font-size:1.45rem;color:var(--accent)}
+    .vehicle-photo{height:220px;object-fit:cover;border-radius:12px}
+    .feature-badge{background:rgba(13,110,253,0.08);color:var(--accent);padding:.4rem .6rem;border-radius:8px;font-weight:600}
+    footer{padding:2rem 0;background:#0b1220;color:#fff}
+    @media(min-width:992px){.hero{padding:6rem 0}}

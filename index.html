@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transporte 24/7 - Servicio Profesional</title>
+   <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- HERO -->
+<header class="container">
+  <div class="row align-items-center hero">
+    <div class="col-lg-7">
+      <div class="d-flex align-items-center gap-3 mb-3">
+       
+        <div>
+          <h1 class="h3 mb-0">Transporte Profesional 24/7</h1>
+          <p class="mb-0 text-muted">Viajes, traslados para personas (incluida atención a personas con discapacidad) y envíos de paquetes — atención a cualquier hora y cualquier lugar.</p>
+        </div>
+      </div>
+
+      <p class="lead mt-3">Conductor responsable, vehículo adaptado y experiencia en traslados especiales. Reserva rápida y contacto directo por WhatsApp.</p>
+
+      <div class="d-flex gap-2 mt-4">
+        <a id="whatsapp-hero" class="btn cta-btn btn-lg shadow-sm" href="#" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-2"></i>Contactar por WhatsApp</a>
+        <a href="#servicios" class="btn btn-outline-primary btn-lg">Ver servicios</a>
+      </div>
+
+      <ul class="list-unstyled mt-4">
+        <li class="d-flex align-items-start mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Atención 24/7 — No importa la hora</li>
+        <li class="d-flex align-items-start mb-2"><i class="bi bi-person-hearts text-primary me-2"></i>Asistencia y accesibilidad para personas con discapacidad</li>
+        <li class="d-flex align-items-start"><i class="bi bi-box-seam text-primary me-2"></i>Traslado seguro de paquetes y mensajería</li>
+      </ul>
+    </div>
+
+    <div class="col-lg-5 mt-4 mt-lg-0">
+      <div class="card p-3 service-card">
+        <img src="img/toyota.jpeg" alt="Vehículo de servicio" class="vehicle-photo w-100 mb-3">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h5 class="mb-0">Toyota Hiace - Adaptado</h5>
+            <small class="text-muted">Capacidad: hasta 6 pasajeros / Espacio para silla de ruedas</small>
+          </div>
+          <div class="text-end">
+            <div class="feature-badge">Seguro y habilitado</div>
+            <small class="d-block text-muted mt-1">Documento: Habilitación municipal</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-3 mt-3 service-card">
+        <h6 class="mb-2">Reserva rápida</h6>
+        <p class="text-muted small">Rellena tus datos y se abrirá un chat de WhatsApp con un mensaje predefinido para agilizar la reserva.</p>
+        <form id="quick-book" class="row g-2">
+          <div class="col-12"><input type="text" id="name" class="form-control" placeholder="Tu nombre" required></div>
+          <div class="col-12"><input type="text" id="pickup" class="form-control" placeholder="Lugar de salida" required></div>
+          <div class="col-12"><input type="text" id="dest" class="form-control" placeholder="Destino" required></div>
+          <div class="col-12"><input type="datetime-local" id="when" class="form-control"></div>
+          <div class="col-12 d-grid"><button type="submit" class="btn cta-btn">Pedir por WhatsApp</button></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="container my-5">
+  <div class="row gy-4">
+    <div class="col-lg-4">
+      <div class="p-4 service-card h-100">
+        <h5>Traslados personales</h5>
+        <p class="text-muted">Viajes urbanos e interurbanos, traslados a hospitales, domicilios y eventos. Atención adaptada y acompañamiento si es necesario.</p>
+        <div class="mt-3 info-row d-flex gap-3 align-items-center">
+          <i class="bi bi-person-badge icon"></i>
+          <small class="text-muted">Conductor con más de 8 años de experiencia</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="p-4 service-card h-100">
+        <h5>Mensajería y paquetes</h5>
+        <p class="text-muted">Envios urgentes y programados, pequeños y medianos paquetes. Seguimiento y comprobante de entrega.</p>
+        <div class="mt-3 info-row d-flex gap-3 align-items-center">
+          <i class="bi bi-box2-fill icon"></i>
+          <small class="text-muted">Seguro para cargas y embalaje disponible</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="p-4 service-card h-100">
+        <h5>Traslados especiales</h5>
+        <p class="text-muted">Atención personalizada para personas con discapacidad, traslado con rampa, anclajes de seguridad y atención respetuosa.</p>
+        <div class="mt-3 info-row d-flex gap-3 align-items-center">
+          <i class="bi bi-heart-pulse icon"></i>
+          <small class="text-muted">Formación en asistencia y primeros auxilios</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE EL CONDUCTOR Y VEHÍCULO -->
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <h4>Sobre el conductor</h4>
+      <p class="text-muted">Nombre: <strong id="driver-name">Juan Pérez</strong><br>
+      Licencia profesional: <strong>B - Transporte</strong><br>
+      Experiencia: <strong>8 años</strong><br>
+      Capacitación: <strong>Atención a personas con discapacidad, primeros auxilios</strong></p>
+
+      <h5 class="mt-3">Información del vehículo</h5>
+      <ul class="text-muted">
+        <li>Modelo: <strong>Toyota Hiace 2018</strong></li>
+        <li>Capacidad: <strong>6 pasajeros + espacio para silla</strong></li>
+        <li>Elementos de seguridad: <strong>Rampa, anclajes, cinturones especiales</strong></li>
+        <li>Documentación: <strong>Habilitación municipal y seguro vigente</strong></li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <div class="card p-3 service-card">
+        <h6>Datos útiles</h6>
+        <p class="small text-muted mb-1">Zona de cobertura:</p>
+        <p class="mb-3"><span class="badge bg-primary">Local</span> <span class="badge bg-secondary">Interurbano</span> <span class="badge bg-info text-dark">Nacional</span></p>
+
+        <h6>Formas de pago</h6>
+        <p class="small text-muted">Efectivo, transferencia bancaria y Mercado Pago (consultar para paquetes grandes).</p>
+
+        <h6 class="mt-3">Horarios</h6>
+        <p class="small text-muted">Atención 24/7 — disponibilidad nocturna y festivos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACTO RÁPIDO -->
+<section class="container my-5">
+  <div class="row">
+    <div class="col-lg-8">
+      <h4>Contacto</h4>
+      <p class="text-muted">Para reservar o pedir presupuesto, contactá por WhatsApp clickeando el botón o usando el formulario rápido.</p>
+    </div>
+    <div class="col-lg-4">
+      <div class="card p-3 text-center service-card">
+        <h5 class="mb-2">Envíanos un mensaje</h5>
+        <p class="text-muted small">Teléfono:</p>
+        <p class="h5 mb-2" id="phone-display">+5493704771041</p>
+        <a id="whatsapp-footer" class="btn btn-success w-100" href="#" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-2"></i>Chatear por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="mb-0">© <span id="year"></span> Transporte Profesional — Todos los derechos reservados</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <small>Diseñado para servicio profesional y atención inclusiva.</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
