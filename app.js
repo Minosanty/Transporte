@@ -1,8 +1,7 @@
-
-  // === CONFIG: reemplaza este número por el número real del conductor ===
-  const PHONE_E164 = '+5493704771041'; // formato E.164: +[código país][sin ceros ni signos]
-  const DRIVER_NAME = 'miño santiago ';
-
+// === CONFIG: reemplaza este número por el número real del conductor ===
+  const PHONE_E164 = '+5493704815221'; // formato E.164: +[código país][sin ceros ni signos]
+  const DRIVER_NAME = 'Alejandro Sebastian Mouchard ';
+  
   // actualiza displays
   document.getElementById('phone-display').textContent = PHONE_E164.replace('+54','+54 ');
   document.getElementById('driver-name').textContent = DRIVER_NAME;
